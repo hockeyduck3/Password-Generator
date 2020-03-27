@@ -40,7 +40,6 @@ generateBtn.addEventListener('click', passwordMaker);
 
 // Password Maker function
 function passwordMaker() {
-    
     // Empty character string
     let characters = '';
 
@@ -142,4 +141,11 @@ function passwordMaker() {
 
     // Enable the copy button
     copyBtn.disabled = '';
+
+    // Event listener for the copy button
+    copyBtn.addEventListener('click', function() {
+        passwordText.select();
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+    })
 }
