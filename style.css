@@ -37,8 +37,8 @@ h2, .navbar-brand, #copyBtn, #passwordLength, #number, .custom-control-label, #g
 }
 
 .navbar {
-    padding: 0;
     border-bottom: 3px solid black;
+    padding: 0;
 }
 
 .navbar-brand {
@@ -49,8 +49,8 @@ h2, .navbar-brand, #copyBtn, #passwordLength, #number, .custom-control-label, #g
 
 /* Main */
 main {
-    margin: 25px 5%;
     box-shadow: 2px 9px 15px -3px #444;
+    margin: 25px 5%;
 }
 
 main h2 {
@@ -66,8 +66,8 @@ main h2 {
 }
 
 .container-fluid {
-    padding-right: 0;
     padding-left: 0;
+    padding-right: 0;
 }
 
 /* Everything above the hr */
@@ -85,9 +85,9 @@ main h2 {
 }
 
 hr {
-    height: 2px;
     background-color: #444;
     border: none;
+    height: 2px;
 }
 
 /* Text area for the password */
@@ -126,8 +126,8 @@ textarea:focus {
 .custom-control-label::before, 
 .custom-control-label::after {
     top: .6rem;
-    width: 1.5rem;
     height: 1.5rem;
+    width: 1.5rem;
 }
 
 .row {
@@ -143,8 +143,8 @@ textarea:focus {
 /* Github link/p tag */
 .beforeFooter {
     font-size: 11px;
-    text-align: center;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 #githubLink {
@@ -195,7 +195,7 @@ footer p{
     }
 }
 
-/* iPhone5/SE */
+/* iPhone 5/SE */
 @media(max-width: 320px){
     .cardTitle h2 {
         font-size: 35px;
@@ -208,5 +208,9 @@ footer p{
     .custom-control-label {
         font-size: 29px;
         padding-top: 2px;
+    }
+
+    .beforeFooter p {
+        font-size: 10px;
     }
 }
