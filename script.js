@@ -53,21 +53,30 @@ function passwordMaker() {
     // Added characters to the characters string based on the user's input
     if (lowerCheck.checked) {
         characters += lowerSet;
-        console.log(characters);
     }
 
     if (upperCheck.checked) {
         characters += upperSet;
-        console.log(characters);
     }
 
     if (specialCheck.checked) {
         characters += specialSet;
-        console.log(characters);
     }
 
     if (numberCheck.checked) {
         characters += numberSet;
-        console.log(characters);
+    }
+
+    // Empty password string for the user's generated password
+    let userPassword = '';
+
+    // Function for creating the passw
+    passwordCreation();
+
+    function passwordCreation() {
+        // Loop through the length of the range and add it to the empty string of userPassword
+        for (let i = 0; i < range.value; i++) {
+            userPassword += (characters.charAt(Math.floor(Math.random() * characters.length)));
+        }
     }
 }
