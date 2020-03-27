@@ -147,5 +147,11 @@ function passwordMaker() {
         passwordText.select();
         document.execCommand('copy');
         window.getSelection().removeAllRanges();
+
+        document.querySelector('.copied').classList.remove('hide');
+        
+        setTimeout(function() {
+            document.querySelector('.copied').classList.add('hide');
+        }, 5000)
     })
 }
