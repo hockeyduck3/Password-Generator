@@ -22,7 +22,7 @@
                 <section class="card-body">
                     <div class="cardTitle">
                         <h2>Password Generator</h2>
-                        <button type="button" class="btn btn-secondary btn-sm" id="copyBtn">Copy Password</button>
+                        <button type="button" class="btn btn-secondary btn-sm" id="copyBtn" disabled>Copy Password</button>
                     </div>
 
                     <hr class="line">
@@ -30,8 +30,8 @@
                     <textarea name="Password" id="placeHolder" placeholder="Password" readonly></textarea>
 
                     <!-- Length of password -->
-                    <label for="customRange">Length of password: <span id="number">8</span></label>
-                    <input type="range" class="custom-range" value="8" min="8" max="128" id="customRange">
+                    <label for="customRange" id="passwordLength">Password length: <span id="number">8</span></label>
+                    <input type="range" class="custom-range" value="8" min="8" max="128">
                 </section>
             </main>
         </div>
@@ -41,5 +41,7 @@
             <p>Made with &hearts; in SLC.</p>
             <p id="copy">&copy; Copyright 2020.</p>
         </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>
