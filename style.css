@@ -155,3 +155,39 @@ footer p{
     margin: 1px 0 0 0;
     padding: 5px 0 0 2px;
 }
+
+
+/* Media */
+
+/* Most Phones */
+@media(max-width: 640px){
+    .cardTitle {
+        flex-direction: column;
+    }
+
+    .cardTitle h2 {
+        font-size: 40px;
+        margin: 0 auto;
+    }
+
+    #copyBtn {
+        position: relative;
+        width: 100%;
+    }
+}
+
+/* iPhone5/SE */
+@media(max-width: 320px){
+    .cardTitle h2 {
+        font-size: 35px;
+    }
+
+    #passwordLength, #number {
+        font-size: 33px;
+    }
+
+    .custom-control-label {
+        font-size: 29px;
+        padding-top: 2px;
+    }
+}
