@@ -17,7 +17,7 @@ body {
 }
 
 
-h2, .navbar-brand {
+h2, .navbar-brand, #copyBtn {
     font-family: 'Yellowtail', cursive;
 }
 
@@ -40,6 +40,19 @@ main {
 
 main h2 {
     font-size: 50px;
+}
+
+.cardTitle {
+    display: flex;
+    flex-direction: row;
+}
+
+#copyBtn {
+    font-size: 25px;
+    margin: 15px 15px 0 0;
+    position: absolute;
+    right: 0;
+    width: 200px;
 }
 
 hr {
