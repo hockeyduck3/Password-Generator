@@ -42,25 +42,6 @@ main h2 {
     font-size: 50px;
 }
 
-.cardTitle {
-    display: flex;
-    flex-direction: row;
-}
-
-#copyBtn {
-    font-size: 25px;
-    margin: 15px 15px 0 0;
-    position: absolute;
-    right: 0;
-    width: 200px;
-}
-
-hr {
-    height: 2px;
-    background-color: #444;
-    border: none;
-}
-
 .card {
     border: 3px solid #444;
 }
@@ -74,6 +55,36 @@ hr {
     padding-left: 0;
 }
 
+/* Everything above the hr */
+.cardTitle {
+    display: flex;
+    flex-direction: row;
+}
+
+#copyBtn {
+    background-color: #444;
+    font-size: 25px;
+    margin: 15px 15px 0 0;
+    position: absolute;
+    right: 0;
+    width: 200px;
+}
+
+#copyBtn:hover {
+    background-color: rgb(116, 116, 116);
+}
+
+#copyBtn:disabled {
+    background-color: #6c757d;
+}
+
+hr {
+    height: 2px;
+    background-color: #444;
+    border: none;
+}
+
+/* Text area for the password */
 textarea {
     border-radius: 6px;
     border: 2px solid #444;
@@ -88,6 +99,21 @@ textarea {
 
 textarea:focus {
     outline: none;
+}
+
+
+/* Length of the password */
+#passwordLength, #number {
+    font-size: 40px;
+    font-family: 'Yellowtail', cursive;
+}
+
+.custom-range::-webkit-slider-thumb {
+    background: #444;
+}
+
+.custom-range::-webkit-slider-thumb:active {
+    background: rgb(116, 116, 116);
 }
 
 /* Footer */
