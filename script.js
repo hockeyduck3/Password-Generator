@@ -21,8 +21,53 @@ numberCheck.addEventListener('change', isChecked);
 // Function to enable the generate password button
 function isChecked() {
     if (lowerCheck.checked || upperCheck.checked || specialCheck.checked || numberCheck.checked) {
-        document.querySelector('#generateBtn').disabled = "";
+        generateBtn.disabled = "";
     } else {
         document.querySelector('#generateBtn').disabled = "disabled";
+    }
+}
+
+// Variable for the generate password button
+const generateBtn = document.querySelector('#generateBtn');
+
+// Event listner for the generate password button
+generateBtn.addEventListener('click', passwordMaker);
+
+
+// Password Maker function
+function passwordMaker() {
+    
+    // Empty character string
+    let characters = '';
+
+    // Strings for the other characters
+    const lowerSet = 'abcdefghijklmnopqrstuvwxyz';
+
+    const upperSet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+    // Special characters selection based off of this website https://docs.oracle.com/cd/E11223_01/doc.910/e11197/app_special_char.htm#MCMAD416
+    const specialSet = `@%+\/'!#$^?:,(){}[]~-_.`;
+
+    const numberSet = '0123456789';
+
+    // Added characters to the characters string based on the user's input
+    if (lowerCheck.checked) {
+        characters += lowerSet;
+        console.log(characters);
+    }
+
+    if (upperCheck.checked) {
+        characters += upperSet;
+        console.log(characters);
+    }
+
+    if (specialCheck.checked) {
+        characters += specialSet;
+        console.log(characters);
+    }
+
+    if (numberCheck.checked) {
+        characters += numberSet;
+        console.log(characters);
     }
 }
