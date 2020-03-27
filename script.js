@@ -21,14 +21,18 @@ numberCheck.addEventListener('change', isChecked);
 // Function to enable the generate password button
 function isChecked() {
     if (lowerCheck.checked || upperCheck.checked || specialCheck.checked || numberCheck.checked) {
-        generateBtn.disabled = "";
+        generateBtn.disabled = '';
     } else {
-        document.querySelector('#generateBtn').disabled = "disabled";
+        document.querySelector('#generateBtn').disabled = 'disabled';
     }
 }
 
-// Variable for the generate password button
+// Variable for the generate password button and copy button
 const generateBtn = document.querySelector('#generateBtn');
+const copyBtn = document.querySelector('#copyBtn');
+
+// Variable for the password text area
+const passwordText = document.querySelector('#placeHolder');
 
 // Event listner for the generate password button
 generateBtn.addEventListener('click', passwordMaker);
@@ -132,4 +136,10 @@ function passwordMaker() {
             }
         }
     }
+
+    // Present the generated password to the user
+    passwordText.textContent = userPassword;
+
+    // Enable the copy button
+    copyBtn.disabled = '';
 }
