@@ -20,11 +20,18 @@
         <div class="container-fluid">
             <main class="card">
                 <section class="card-body">
-                    <h2>Password Generator</h2>
+                    <div class="cardTitle">
+                        <h2>Password Generator</h2>
+                        <button type="button" class="btn btn-secondary btn-sm" id="copyBtn">Copy Password</button>
+                    </div>
 
                     <hr class="line">
 
                     <textarea name="Password" id="placeHolder" placeholder="Password" readonly></textarea>
+
+                    <!-- Length of password -->
+                    <label for="customRange">Length of password: <span id="number">8</span></label>
+                    <input type="range" class="custom-range" value="8" min="8" max="128" id="customRange">
                 </section>
             </main>
         </div>
