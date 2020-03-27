@@ -140,6 +140,25 @@ textarea:focus {
     margin-top: 35px;
 }
 
+/* Github link/p tag */
+.beforeFooter {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#githubLink {
+    color: black;
+    font-size: 15px;
+    transition: linear 0.1s;
+}
+
+#githubLink:hover {
+    color: rgb(116, 116, 116);
+    transition: linear 0.1s;
+    text-decoration: none;
+}
+
 /* Footer */
 footer {
     margin-top: auto;
