@@ -116,10 +116,6 @@ textarea:focus {
 }
 
 /* Checkboxes */
-
-.row {
-    margin-left: 70px;
-}
 .custom-control-input {
     margin-top: 50px;
 }
@@ -138,6 +134,10 @@ textarea:focus {
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before{
     background-color: #444;
+}
+
+.row {
+    margin-top: 15px;
 }
 
 /* Footer */
