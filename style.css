@@ -17,7 +17,7 @@ body {
 }
 
 
-.navbar-brand {
+h2, .navbar-brand {
     font-family: 'Yellowtail', cursive;
 }
 
@@ -32,7 +32,34 @@ body {
     padding: 20px 0px;
 }
 
+/* Main */
+main {
+    margin: 25px 5%;
+    box-shadow: 2px 9px 15px -3px #444;
+}
 
+main h2 {
+    font-size: 50px;
+}
+
+hr {
+    height: 2px;
+    background-color: #444;
+    border: none;
+}
+
+.card {
+    border: 3px solid #444;
+}
+
+.card-body {
+    padding: 1.04rem;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
 
 /* Footer */
 footer {
