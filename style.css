@@ -11,13 +11,28 @@ body {
     flex-direction: column;
 }
 
-/* Navbar */
+/* Colors */
+ #copyBtn, 
+.custom-range::-webkit-slider-thumb,
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before,
+#generateBtn {
+    background-color: #444;
+}
+
 .bg-dark {
     background-color: #444 !important;
 }
 
+#copyBtn:hover, #generateBtn:hover {
+    background-color: rgb(116, 116, 116);
+}
 
-h2, .navbar-brand, #copyBtn, #passwordLength, #number, .custom-control-label {
+#copyBtn:disabled, #generateBtn:disabled {
+    background-color: #6c757d;
+}
+
+/* Navbar */
+h2, .navbar-brand, #copyBtn, #passwordLength, #number, .custom-control-label, #generateBtn {
     font-family: 'Yellowtail', cursive;
 }
 
@@ -62,20 +77,11 @@ main h2 {
 }
 
 #copyBtn {
-    background-color: #444;
     font-size: 25px;
     margin: 15px 15px 0 0;
     position: absolute;
     right: 0;
     width: 200px;
-}
-
-#copyBtn:hover {
-    background-color: rgb(116, 116, 116);
-}
-
-#copyBtn:disabled {
-    background-color: #6c757d;
 }
 
 hr {
@@ -107,14 +113,6 @@ textarea:focus {
     font-size: 40px;
 }
 
-.custom-range::-webkit-slider-thumb {
-    background: #444;
-}
-
-.custom-range::-webkit-slider-thumb:active {
-    background: rgb(116, 116, 116);
-}
-
 /* Checkboxes */
 .custom-control-input {
     margin-top: 50px;
@@ -132,12 +130,14 @@ textarea:focus {
     height: 1.5rem;
 }
 
-.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
-    background-color: #444;
-}
-
 .row {
     margin-top: 15px;
+}
+
+/* Generate Password button */
+#generateBtn {
+    font-size: 30px;
+    margin-top: 35px;
 }
 
 /* Footer */
