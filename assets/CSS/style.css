@@ -182,7 +182,7 @@ footer p{
 
 .copied {
     color: green;
-    font-size: 25px;
+    font-size: 45px;
     text-align: center;
 }
 
@@ -202,6 +202,10 @@ footer p{
     #copyBtn {
         position: relative;
         width: 100%;
+    }
+
+    .copied {
+        font-size: 25px;
     }
 }
 
