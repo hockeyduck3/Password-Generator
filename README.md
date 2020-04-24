@@ -6,7 +6,7 @@
 
 * This password generator is using the Math.random method
 
-* This site is currently live on github pages
+* This site is currently live on github pages https://hockeyduck3.github.io/Password-Generator/
 
 This is just a little side project that I wanted to make. The Javascript is based off of the Javascript I wrote for my week 3 class assignment. Here is the link to that repo, https://github.com/hockeyduck3/week-3-hw
 
